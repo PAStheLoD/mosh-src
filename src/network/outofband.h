@@ -118,6 +118,7 @@ namespace Network {
   class OutOfBandPlugin
   {
   public:
+    virtual ~OutOfBandPlugin() {};
     virtual bool active( void ) = 0;
     virtual void pre_poll( void ) = 0;
     virtual void post_poll( void ) = 0;
